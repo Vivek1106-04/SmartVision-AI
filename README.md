@@ -169,14 +169,15 @@ SmartVision-AI/
 │   ├── python/                 # Preprocessing and data-split tests
 │   └── fixtures/               # Recorded Python/Keras reference output
 ├── dataset/
-│   ├── raw/                    # Exercise video clips (squat/pushup/bicepCurl)
 │   ├── processed/              # Extracted landmark tensors (.npz)
 │   └── manifest.csv            # Dataset metadata
 ├── models/                     # Trained Keras models (.h5)
 ├── results/                    # Metrics, plots, confusion matrices
-├── public/models/              # TF.js model for browser inference
-└── dist/                       # Compiled production bundle
+└── public/models/              # TF.js model for browser inference
 ```
+
+Not committed: `dataset/raw/` (source videos, see Dataset & Training above) and
+`dist/` (production bundle, created by `npm run build`).
 
 ---
 
@@ -184,7 +185,8 @@ SmartVision-AI/
 
 ### 1. Install Dependencies & Run Local Dev Server
 ```bash
-cd /Users/vivek/Documents/SmartVision-AI
+git clone https://github.com/Vivek1106-04/SmartVision-AI.git
+cd SmartVision-AI
 npm install
 npm run dev
 ```
