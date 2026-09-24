@@ -1,0 +1,4 @@
+Video-grouped split (no clip shared between folds)
+  train:  2774 windows from  86 videos  [squat=982, pushup=1107, bicepCurl=685]
+  val  :   924 windows from  28 videos  [squat=325, pushup=375, bicepCurl=224]
+  test :   915 windows from  26 videos  [squat=319, pushup=372, bicepCurl=224]

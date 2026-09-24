@@ -1,0 +1,26 @@
+{
+  "name": "smartvision-ai",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node --test \"tests/js/*.test.mjs\"",
+    "test:py": "venv/bin/python -m pytest",
+    "bench": "node tools/bench/replay.mjs",
+    "screenshots": "node tools/bench/screenshots.mjs"
+  },
+  "devDependencies": {
+    "puppeteer": "^25.11.0",
+    "vite": "^8.2.0"
+  },
+  "dependencies": {
+    "@mediapipe/camera_utils": "^0.3.1675466862",
+    "@mediapipe/drawing_utils": "^0.3.1675466124",
+    "@mediapipe/pose": "^0.5.1675469404",
+    "canvas-confetti": "^1.9.4",
+    "chart.js": "^4.5.1"
+  }
+}

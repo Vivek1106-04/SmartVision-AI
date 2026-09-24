@@ -1,0 +1,48 @@
+{
+  "method": "permutation importance, accuracy drop over 10 shuffles of the held-out fold",
+  "baselineAccuracy": 0.9246,
+  "classes": {
+    "squat": [
+      {
+        "name": "Hands",
+        "weight": 0.6361
+      },
+      {
+        "name": "Feet",
+        "weight": 0.2353
+      },
+      {
+        "name": "Wrists",
+        "weight": 0.1286
+      }
+    ],
+    "pushup": [
+      {
+        "name": "Hands",
+        "weight": 0.751
+      },
+      {
+        "name": "Feet",
+        "weight": 0.2172
+      },
+      {
+        "name": "Head and Face",
+        "weight": 0.0318
+      }
+    ],
+    "bicepCurl": [
+      {
+        "name": "Head and Face",
+        "weight": 0.8112
+      },
+      {
+        "name": "Hands",
+        "weight": 0.1631
+      },
+      {
+        "name": "Feet",
+        "weight": 0.0258
+      }
+    ]
+  }
+}

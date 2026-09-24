@@ -1,0 +1,27 @@
+video,exercise,frames,reps_counted,reference_reps,error
+squat_1.MOV,squat,587,0,2,-2
+squat_13.mp4,squat,130,2,2,0
+squat_14.mp4,squat,101,1,1,0
+squat_20.mp4,squat,233,2,2,0
+squat_4.MOV,squat,600,1,6,-5
+push-up_11.mp4,pushup,150,2,3,-1
+push-up_18.mp4,pushup,70,0,1,-1
+push-up_29.mp4,pushup,150,2,4,-2
+push-up_30.mp4,pushup,122,3,4,-1
+push-up_33.mp4,pushup,146,3,5,-2
+push-up_38.mp4,pushup,150,2,2,0
+push-up_39.mp4,pushup,145,1,2,-1
+push-up_47.mp4,pushup,105,1,1,0
+push-up_49.mp4,pushup,150,3,3,0
+push-up_54.mp4,pushup,778,19,19,0
+barbell biceps curl_1.mp4,bicepCurl,114,1,0,1
+barbell biceps curl_17.mp4,bicepCurl,61,1,0,1
+barbell biceps curl_19.mp4,bicepCurl,60,1,1,0
+barbell biceps curl_32.mp4,bicepCurl,65,1,1,0
+barbell biceps curl_38.mp4,bicepCurl,59,1,1,0
+barbell biceps curl_43.mp4,bicepCurl,132,1,1,0
+barbell biceps curl_46.mp4,bicepCurl,94,1,1,0
+barbell biceps curl_5.mp4,bicepCurl,82,1,1,0
+barbell biceps curl_50.mp4,bicepCurl,150,1,1,0
+barbell biceps curl_56.mp4,bicepCurl,213,2,5,-3
+barbell biceps curl_60.mp4,bicepCurl,220,2,6,-4

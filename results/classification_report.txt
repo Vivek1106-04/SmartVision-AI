@@ -1,0 +1,9 @@
+              precision    recall  f1-score   support
+
+       squat       0.93      0.91      0.92       319
+      pushup       0.97      0.97      0.97       372
+   bicepCurl       0.84      0.88      0.86       224
+
+    accuracy                           0.92       915
+   macro avg       0.91      0.92      0.92       915
+weighted avg       0.93      0.92      0.92       915

@@ -1,0 +1,3 @@
+pipeline,clip_mean_window_accuracy
+training_faithful,0.9041
+as_shipped,0.9054

@@ -1,0 +1,9 @@
+mediapipe
+tensorflow
+tensorflowjs
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+opencv-python-headless

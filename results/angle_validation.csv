@@ -1,0 +1,27 @@
+video,exercise,width,height,aspect_ratio,angle_mae_deg,angle_max_deg
+"squat_1.MOV",squat,1920,1080,1.778,3.9,23.8
+"squat_13.mp4",squat,1280,720,1.778,12.4,21.5
+"squat_14.mp4",squat,1280,720,1.778,21.48,31.99
+"squat_20.mp4",squat,1280,720,1.778,9.58,25.41
+"squat_4.MOV",squat,1920,1080,1.778,10.62,29.22
+"push-up_11.mp4",pushup,1920,1080,1.778,10.14,18.28
+"push-up_18.mp4",pushup,1920,1080,1.778,17.62,30.81
+"push-up_29.mp4",pushup,1920,1080,1.778,16.19,28.1
+"push-up_30.mp4",pushup,1920,1080,1.778,15.96,31.81
+"push-up_33.mp4",pushup,1920,1080,1.778,8.46,27.82
+"push-up_38.mp4",pushup,1920,1080,1.778,11.07,24.37
+"push-up_39.mp4",pushup,1920,1080,1.778,8.45,24.42
+"push-up_47.mp4",pushup,1920,1080,1.778,11.08,23.22
+"push-up_49.mp4",pushup,1920,1080,1.778,10.07,20.52
+"push-up_54.mp4",pushup,1280,720,1.778,7.81,18.96
+"barbell biceps curl_1.mp4",bicepCurl,1920,1080,1.778,10.52,19.34
+"barbell biceps curl_17.mp4",bicepCurl,1920,1080,1.778,9.15,18.7
+"barbell biceps curl_19.mp4",bicepCurl,1920,1080,1.778,14.17,22.37
+"barbell biceps curl_32.mp4",bicepCurl,1920,1080,1.778,9.5,19.04
+"barbell biceps curl_38.mp4",bicepCurl,1920,1080,1.778,3.75,21.52
+"barbell biceps curl_43.mp4",bicepCurl,1280,720,1.778,14.09,23.12
+"barbell biceps curl_46.mp4",bicepCurl,1280,720,1.778,9.83,17.98
+"barbell biceps curl_5.mp4",bicepCurl,1920,1080,1.778,12.6,19.94
+"barbell biceps curl_50.mp4",bicepCurl,1280,720,1.778,12.29,21.09
+"barbell biceps curl_56.mp4",bicepCurl,1280,720,1.778,12.41,27.21
+"barbell biceps curl_60.mp4",bicepCurl,1280,720,1.778,11.93,30.49

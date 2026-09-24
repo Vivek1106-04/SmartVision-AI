@@ -1,0 +1,5 @@
+name,clip,exercise,caption,reps,phase,predicted,attribution,currentTime
+"squat","squat_20.mp4","squat","Squat mode at the completion of a counted repetition","1","STANDING","squat","Hands (64%)","3.6"
+"pushup","push-up_54.mp4","pushup","Pushup mode at the completion of a counted repetition","1","TOP PLANK","pushup","Hands (75%)","0.72"
+"bicepcurl","barbell biceps curl_19.mp4","bicepCurl","Bicep curl mode at the completion of a counted repetition","1","ARM EXTENDED","bicepCurl","Head and Face (81%)","1.9"
+"failure-undercount","barbell biceps curl_60.mp4","bicepCurl","Failure case: six repetitions performed, the angle gates register far fewer","1","COMPLETED","bicepCurl","Head and Face (81%)","8.21"
