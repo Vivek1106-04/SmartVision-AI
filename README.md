@@ -1,23 +1,25 @@
-# SmartVision AI — Dual-Engine Pose Analytics & Biomechanics System
+# SmartVision AI: Real-Time Exercise Classification with Temporal Deep Learning
 
-**SmartVision AI** is a production-grade real-time web application designed to serve as a unified, dual-subject capstone project for **Deep Learning (DL)** and **Computer Vision (CV)** courses.
+**SmartVision AI** is a Deep Learning project: a custom-trained LSTM network that
+classifies exercises (squat, pushup, bicep curl) from sequences of body pose landmarks,
+deployed in the browser for real-time inference. A lightweight computer vision layer
+supplies the pose input and on-screen feedback.
 
 ---
 
-## 🎯 Key Project Features & Academic Highlights
+## 🎯 Key Project Features
 
-### 1. Computer Vision (CV) Core
-* **Real-Time Joint Angle Calculation**: Spatial 2D/3D joint angle calculation using vector trigonometry ($\theta = \arccos\frac{\mathbf{v}_1 \cdot \mathbf{v}_2}{\|\mathbf{v}_1\| \|\mathbf{v}_2\|}$).
-* **Exponential Moving Average (EMA) Jitter Reduction**: Low-pass temporal keypoint smoothing ($S_t = \alpha Y_t + (1 - \alpha) S_{t-1}, \alpha = 0.35$).
-* **Kinetic Velocity Derivation**: Numerical derivative calculation ($\omega(t) = \frac{d\theta}{dt}$).
-* **Optical Motion Vector Trails**: Spatial keyjoint motion buffering & path visualization.
-* **Dynamic ROI Bounding Boxes**: Spatial extremum extent calculation with adaptive padding.
-
-### 2. Deep Learning (DL) Core
-* **Stage 1 - Pose Estimation**: Uses MediaPipe BlazePose (pretrained, frozen) as a feature extractor (33 3D keypoints). Stage 1 pose estimation is pretrained; no landmark training is performed.
-* **Stage 2 - Temporal Sequence Classifier**: A custom-trained 2-layer LSTM temporal classifier trained by us on a Kaggle dataset for movement phase detection and exercise classification.
+### 1. Deep Learning Core (primary)
+* **Temporal Sequence Classifier**: A 2-layer LSTM trained by us on 140 Kaggle exercise videos (4,613 sliding windows of 15 frames) to classify the exercise being performed. 92.5% test accuracy on 26 unseen videos under a leakage-free, video-grouped split.
+* **Ablation Study**: LSTM vs GRU vs 1D-CNN vs single-frame MLP vs un-normalized LSTM, each repeated over 5 random seeds, isolating the value of spatial normalization and of temporal modelling.
 * **Explainable AI (XAI)**: Per-class feature attribution measured by permutation importance over the held-out fold (`tools/permutation_importance.py`) and loaded at runtime from `public/models/exercise_classifier/saliency.json`. Until the model produces a prediction the panel shows nothing rather than an invented ranking.
-* **Audio & Reporting**: Web Speech API real-time voice coaching and downloadable Markdown session reports.
+* **In-Browser Deployment**: Keras model exported to TF.js; the browser forward pass matches Keras to 1.19e-7, pinned by train/serve parity tests.
+* **Pretrained Feature Extractor**: MediaPipe BlazePose (frozen) supplies 33 3D keypoints per frame as the network input. No landmark training is performed.
+
+### 2. Computer Vision Support (secondary)
+* **Joint Angle Calculation**: Vector trigonometry ($\theta = \arccos\frac{\mathbf{v}_1 \cdot \mathbf{v}_2}{\|\mathbf{v}_1\| \|\mathbf{v}_2\|}$) drives rule-based rep counting and form checks.
+* **EMA Jitter Reduction**: Low-pass keypoint smoothing ($S_t = \alpha Y_t + (1 - \alpha) S_{t-1}, \alpha = 0.35$).
+* **HUD Visualization**: Skeleton overlay, motion trails, ROI boxes, angular velocity telemetry, voice coaching and downloadable session reports.
 
 ---
 
